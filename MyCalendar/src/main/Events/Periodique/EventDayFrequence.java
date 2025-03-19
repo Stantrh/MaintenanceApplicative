@@ -20,10 +20,7 @@ public class EventDayFrequence {
 
     @Override
     public String toString() {
-        return "EventDayFrequence{" +
-                "dayFrequence=" + dayFrequence +
-                '}';
+        return String.valueOf(dayFrequence);
     }
-
 
 }

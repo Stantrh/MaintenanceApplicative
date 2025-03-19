@@ -1,9 +1,9 @@
 package main.Events.RDVPersonnel;
 
 import main.Event;
-import main.Events.EventDuration;
-import main.Events.EventOwner;
-import main.Events.EventTitle;
+import main.Events.CommonToAll.EventDuration;
+import main.Events.CommonToAll.EventOwner;
+import main.Events.CommonToAll.EventTitle;
 
 import java.time.LocalDateTime;
 

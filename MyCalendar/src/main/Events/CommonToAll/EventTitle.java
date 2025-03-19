@@ -1,4 +1,4 @@
-package main.Events;
+package main.Events.CommonToAll;
 
 import java.util.Objects;
 

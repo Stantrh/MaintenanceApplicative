@@ -1,9 +1,9 @@
 package main.Events.Periodique;
 
 import main.Event;
-import main.Events.EventDuration;
-import main.Events.EventOwner;
-import main.Events.EventTitle;
+import main.Events.CommonToAll.EventDuration;
+import main.Events.CommonToAll.EventOwner;
+import main.Events.CommonToAll.EventTitle;
 
 import java.time.LocalDateTime;
 
@@ -15,8 +15,15 @@ public class PeriodicEvent extends Event {
         this.frequence = frequence;
     }
 
+
+    public EventDayFrequence getFrequence() {
+        return frequence;
+    }
+
     @Override
     public String description() {
         return "Événement périodique : " + title + " tous les " + frequence + " jours";
     }
+
+
 }

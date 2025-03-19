@@ -17,6 +17,6 @@ public class EventLocation {
 
     @Override
     public String toString() {
-        return "Location: " + location;
+        return location;
     }
 }
