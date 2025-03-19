@@ -1,6 +1,7 @@
 # 🗓️ TP Noté – Maintenance Applicative & TDD en Java
 Gestionnaire d'Événements & Calendrier
 
+#### Stanislas TROHA S6 RA-IL 1
 
 ## 🎯 Objectifs du TP :
 Mettre en pratique la démarche Test-Driven Development (TDD).  
