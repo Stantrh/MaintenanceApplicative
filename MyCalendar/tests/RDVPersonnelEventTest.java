@@ -1,6 +1,6 @@
+import main.Events.Type.RDVPersonnelEvent;
 import org.junit.jupiter.api.Test;
 import main.Events.CommonToAll.*;
-import main.Events.RDVPersonnel.*;
 
 import java.time.LocalDateTime;
 
@@ -18,9 +18,9 @@ class RDVPersonnelEventTest {
         // Création de l'événement
         RDVPersonnelEvent event = new RDVPersonnelEvent(title, owner, date, duration);
 
-        // Vérifications
-//        assertEquals("Dentiste", event.getTitle());
-        assertEquals("Bob", event.getProprietaire());
+        // ✅ Vérifications corrigées
+        assertEquals("Dentiste", event.getTitle().getTitle());
+        assertEquals("Bob", event.getProprietaire().getNom());
         assertEquals("RDV : Dentiste à 2025-03-20T10:30", event.description());
     }
 }

@@ -1,6 +1,7 @@
+import main.Events.Type.PeriodicEvent;
 import org.junit.jupiter.api.Test;
 import main.Events.CommonToAll.*;
-import main.Events.Periodique.*;
+import main.Events.Periodic.*;
 
 import java.time.LocalDateTime;
 
@@ -19,9 +20,9 @@ class PeriodicEventTest {
         // Création de l'événement
         PeriodicEvent event = new PeriodicEvent(title, owner, date, duration, frequence);
 
-        // Vérifications
-//        assertEquals("Cours de Yoga", event.getTitle());
-        assertEquals("Charlie", event.getProprietaire());
+        // ✅ Vérifications corrigées
+        assertEquals("Cours de Yoga", event.getTitle().getTitle());
+        assertEquals("Charlie", event.getProprietaire().getNom());
         assertEquals("Événement périodique : Cours de Yoga tous les 7 jours", event.description());
     }
 }

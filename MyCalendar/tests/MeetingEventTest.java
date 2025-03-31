@@ -1,14 +1,15 @@
+import main.Events.Type.MeetingEvent;
 import org.junit.jupiter.api.Test;
 import main.Events.CommonToAll.*;
-import main.Events.Reunion.*;
+import main.Events.Meeting.*;
 
 import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ReunionEventTest {
+class MeetingEventTest {
     @Test
-    void shouldCreateReunionEventAndGenerateDescription() {
+    void shouldCreateMeetingEventAndGenerateDescription() {
         // Création des objets nécessaires
         EventTitle title = new EventTitle("Réunion Sécurité");
         EventOwner owner = new EventOwner("Alice");
@@ -20,11 +21,11 @@ class ReunionEventTest {
         participants.add("Charlie");
 
         // Création de l'événement
-        ReunionEvent event = new ReunionEvent(title, owner, date, duration, location, participants);
+        MeetingEvent event = new MeetingEvent(title, owner, date, duration, location, participants);
 
-        // Vérifications
-        assertEquals("Réunion Sécurité", event.getTitle());
-        assertEquals("Alice", event.getProprietaire());
+        // ✅ Vérifications
+        assertEquals("Réunion Sécurité", event.getTitle().getTitle());
+        assertEquals("Alice", event.getProprietaire().getNom());
         assertEquals("Salle A", location.toString());
         assertEquals("Bob, Charlie", participants.toString());
         assertEquals("Réunion : Réunion Sécurité à Salle A avec Bob, Charlie", event.description());

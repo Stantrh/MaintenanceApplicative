@@ -10,6 +10,10 @@ public class EventOwner {
         this.owner = owner;
     }
 
+    public String getNom() {
+        return this.owner;
+    }
+
 
     @Override
     public boolean equals(Object o) {

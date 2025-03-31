@@ -1,4 +1,4 @@
-package main.Events.RDVPersonnel;
+package main.Events.Type;
 
 import main.Event;
 import main.Events.CommonToAll.EventDuration;

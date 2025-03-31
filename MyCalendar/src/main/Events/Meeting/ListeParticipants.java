@@ -1,4 +1,4 @@
-package main.Events.Reunion;
+package main.Events.Meeting;
 
 import java.util.ArrayList;
 

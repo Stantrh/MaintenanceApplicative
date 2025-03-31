@@ -1,4 +1,4 @@
-package main.Events.Periodique;
+package main.Events.Periodic;
 
 /**
  * Uniquement pour périodique
